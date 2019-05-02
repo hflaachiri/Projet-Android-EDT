@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:theme="@style/AppTheme">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginTop="30dp"
+        app:srcCompat="@drawable/logo_univ_avignon" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:text="Selectionez une promotion :"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        />
+
+
+    <Spinner
+        android:id="@+id/spinnerPromotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:prompt="@string/promotion_prompt"
+        android:layout_marginTop="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerPromotion"
+        android:text="Selectionez un groupe de TD:"
+        android:textSize="20dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="parent"/>
+
+    <Spinner
+        android:id="@+id/spinnerTD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name2"
+        android:prompt="@string/grpTd_prompt"
+        android:layout_marginTop="350dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/button_sauvegarder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerTD"
+        android:shadowColor="@color/colorAccent"
+        android:text="Sauvegarder"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="400dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
